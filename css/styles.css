@@ -1,12 +1,110 @@
+*,
+*::before,
+*::after {}
+
+
 body {
     font-family: "Roboto", sans-serif;
     color: #434455;
     background-color: #ffffff;
 }
 
+h1,
+h2,
+h3,
+p,
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+* {
+    box-sizing: border-box;
+}
 
 
-.title {
+.page {
+    width: 1440px;
+    margin: 0;
+    background-color: #ffffff;
+}
+
+.container {
+    max-width: 1158px;
+    margin: 0 auto;
+    padding: 0;
+}
+
+/*Header*/
+.page-header {
+    width: 1440px;
+    border-bottom: 1px solid #e7e9fc;
+}
+
+.header-in {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+/*Header-logo-nav*/
+.header-in nav {
+    display: flex;
+    flex-direction: row;
+}
+
+.info ul {
+    display: flex;
+    flex-direction: row;
+}
+
+.nav {
+    display: flex;
+}
+
+.logo {
+    display: flex;
+    padding-left: 0;
+    padding-top: 24px;
+    padding-right: 76px;
+    padding-bottom: 24px;
+}
+
+.list {
+    display: flex;
+    gap: 40px;
+    padding-left: 0;
+    padding-top: 24px;
+    padding-right: 332px;
+    padding-bottom: 24px;
+}
+
+/*Header-info*/
+.mailto {
+    display: flex;
+    padding: 24px 0;
+}
+
+.tel {
+    display: flex;
+    padding: 24px 0 24px 40px;
+}
+
+
+
+
+
+
+
+.section {
+    padding: 120px 0;
+}
+
+
+
+
+
+.page-header .list .list-address .title {
     font-size: 36px;
     font-weight: 700;
     line-height: 1.11;
@@ -14,6 +112,8 @@ body {
     text-align: center;
     text-transform: capitalize;
     color: #2e2f42;
+
+
 }
 
 .section-name {
@@ -40,8 +140,21 @@ body {
 
 .main-section {
     background-color: #2e2f42;
-    color: #ffffff
+    color: #ffffff;
+
+
 }
+
+.container-main-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    flex-direction: column;
+    gap: 48px;
+}
+
 
 .main-title {
     font-size: 56px;
@@ -50,6 +163,9 @@ body {
     letter-spacing: 0.02em;
     text-align: center;
     color: #ffffff;
+
+
+
 }
 
 .section-service {
@@ -71,6 +187,9 @@ body {
     color: #4d5ae5;
     text-transform: uppercase;
 
+
+
+
 }
 
 .studio-black {
@@ -84,6 +203,9 @@ body {
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #2e2f42;
+
+
+
 
 }
 
@@ -106,6 +228,7 @@ ul li:first-child .custom-link:focus {
 .info {
     font-style: normal;
 }
+
 
 
 .address-link {
@@ -133,7 +256,8 @@ ul li:first-child .address-link:focus {
     cursor: pointer;
     color: #ffffff;
     background-color: #4d5ae5;
-    text-align: center;
+    width: 169px;
+    height: 56px;
 
 }
 
