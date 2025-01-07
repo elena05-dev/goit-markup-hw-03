@@ -1,9 +1,6 @@
 *,
 *::before,
-*::after {}
-
-
-body {
+*::after body {
     font-family: "Roboto", sans-serif;
     color: #434455;
     background-color: #ffffff;
@@ -90,20 +87,37 @@ ul {
     padding: 24px 0 24px 40px;
 }
 
-
-
-
-
-
-
+/*Section-main-title*/
 .section {
     padding: 120px 0;
+}
+
+
+.main-section {
+    width: 1440px;
+
+}
+
+.main-title {
+    padding-top: 188px;
+    padding-bottom: 292px;
+    text-align: center;
+    box-sizing: content-box;
+    margin: 0 auto;
+}
+
+
+.service-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 
 
 
 
+/*Typograghy*/
 .page-header .list .list-address .title {
     font-size: 36px;
     font-weight: 700;
@@ -112,8 +126,6 @@ ul {
     text-align: center;
     text-transform: capitalize;
     color: #2e2f42;
-
-
 }
 
 .section-name {
@@ -137,24 +149,10 @@ ul {
     color: #434455;
 }
 
-
 .main-section {
     background-color: #2e2f42;
     color: #ffffff;
-
-
 }
-
-.container-main-title {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-
-    flex-direction: column;
-    gap: 48px;
-}
-
 
 .main-title {
     font-size: 56px;
@@ -163,9 +161,6 @@ ul {
     letter-spacing: 0.02em;
     text-align: center;
     color: #ffffff;
-
-
-
 }
 
 .section-service {
@@ -176,8 +171,6 @@ ul {
     background-color: #f4f4fd;
 }
 
-
-
 .logo {
     font-family: "Raleway", sans-serif;
     font-size: 18px;
@@ -186,10 +179,6 @@ ul {
     letter-spacing: 0.03em;
     color: #4d5ae5;
     text-transform: uppercase;
-
-
-
-
 }
 
 .studio-black {
@@ -203,18 +192,12 @@ ul {
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #2e2f42;
-
-
-
-
 }
 
 ul li:first-child .custom-link:hover,
 ul li:first-child .custom-link:focus {
     color: #404bbf;
 }
-
-
 
 .nav a {
     font-family: "Roboto";
@@ -228,8 +211,6 @@ ul li:first-child .custom-link:focus {
 .info {
     font-style: normal;
 }
-
-
 
 .address-link {
     font-family: "Roboto";
@@ -245,8 +226,6 @@ ul li:first-child .address-link:focus {
     color: #404bbf;
 }
 
-
-
 .order-service-button {
     font-family: "Roboto", sans-serif;
     font-weight: 500;
@@ -258,7 +237,6 @@ ul li:first-child .address-link:focus {
     background-color: #4d5ae5;
     width: 169px;
     height: 56px;
-
 }
 
 .order-service-button:hover {
