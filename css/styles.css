@@ -6,6 +6,12 @@
     background-color: #ffffff;
 }
 
+body {
+    font-family: "Roboto", sans-serif;
+    color: #434455;
+    background-color: #ffffff;
+}
+
 h1,
 h2,
 h3,
@@ -19,20 +25,40 @@ ul {
     box-sizing: border-box;
 }
 
+.section {
+    width: 100%;
+    padding: 120px 0px;
+    box-sizing: border-box;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
 
 .page {
     width: 1440px;
-    margin: 0;
+    height: 3300px;
+    margin: 0px;
     background-color: #ffffff;
 }
 
 .container {
     max-width: 1158px;
-    margin: 0 auto;
-    padding: 0;
+    margin: 0px auto;
+    padding: 0px;
+    box-sizing: border-box;
 }
 
-/*Header*/
+/*-------Header-------*/
 .page-header {
     width: 1440px;
     border-bottom: 1px solid #e7e9fc;
@@ -61,7 +87,7 @@ ul {
 
 .logo {
     display: flex;
-    padding-left: 0;
+    padding-left: 0px;
     padding-top: 24px;
     padding-right: 76px;
     padding-bottom: 24px;
@@ -70,7 +96,7 @@ ul {
 .list {
     display: flex;
     gap: 40px;
-    padding-left: 0;
+    padding-left: 0px;
     padding-top: 24px;
     padding-right: 332px;
     padding-bottom: 24px;
@@ -79,43 +105,136 @@ ul {
 /*Header-info*/
 .mailto {
     display: flex;
-    padding: 24px 0;
+    padding: 24px 0px;
 }
 
 .tel {
     display: flex;
-    padding: 24px 0 24px 40px;
+    padding: 24px 0px 24px 40px;
 }
 
-/*Section-main-title*/
-.section {
-    padding: 120px 0;
-}
-
+/*-------Section-main-title------*/
 
 .main-section {
-    width: 1440px;
-
-}
-
-.main-title {
-    padding-top: 188px;
-    padding-bottom: 292px;
-    text-align: center;
-    box-sizing: content-box;
-    margin: 0 auto;
-}
-
-
-.service-button {
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 1440px;
+
+
+
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.service-button {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 48px;
+}
+
+
+.order-service-button {
+    border-radius: 4px;
+    padding: 16px 32px;
+
+}
+
+/*------Section-service------*/
+
+.section-service {
+    width: 1128px;
+    box-sizing: border-box;
+
 }
 
 
 
 
+.services-item {
+    flex: 1 1 calc(25% - 8px);
+    box-sizing: border-box;
+}
+
+.service {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    gap: 8px;
+}
+
+/*-----Section-person------*/
+
+.section-person {
+    width: 1440px;
+
+    height: auto;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.title {
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 40px;
+
+}
+
+
+.person {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 32px;
+    justify-content: center;
+
+}
+
+.name {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 16px;
+    border-radius: 0px 0px 4px 4px;
+    padding: 0px 0px 32px 0px;
+    width: 264px;
+    height: auto;
+
+}
+
+/*------Section-portfolio------*/
+
+
+.section-portfolio {
+    width: 1158px;
+    margin: 0px auto;
+
+
+}
+
+
+.items {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 24px;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+}
+
+.list-item {
+
+    flex: 1 1 calc(33.333% - 32px);
+    max-width: 360px;
+    box-sizing: border-box;
+    text-align: center;
+}
 
 /*Typograghy*/
 .page-header .list .list-address .title {
@@ -161,6 +280,7 @@ ul {
     letter-spacing: 0.02em;
     text-align: center;
     color: #ffffff;
+    margin: 0;
 }
 
 .section-service {
@@ -235,8 +355,7 @@ ul li:first-child .address-link:focus {
     cursor: pointer;
     color: #ffffff;
     background-color: #4d5ae5;
-    width: 169px;
-    height: 56px;
+
 }
 
 .order-service-button:hover {
