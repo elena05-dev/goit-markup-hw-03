@@ -31,6 +31,10 @@ section {
     box-sizing: border-box;
 }
 
+img {
+    display: block;
+}
+
 .visually-hidden {
     position: absolute;
     width: 1px;
@@ -54,8 +58,8 @@ section {
 .container {
     max-width: 1158px;
     margin: 0px auto;
-    padding: 0px;
-    box-sizing: border-box;
+    padding: 0px 15px;
+
 }
 
 /*-------Header-------*/
@@ -64,54 +68,50 @@ section {
     border-bottom: 1px solid #e7e9fc;
 }
 
-.header-in {
+.header-container {
     display: flex;
-    flex-direction: row;
     justify-content: space-between;
+    align-items: center;
+    padding: 24px o;
 }
 
 /*Header-logo-nav*/
-.header-in nav {
+.header-nav {
     display: flex;
-    flex-direction: row;
+    align-items: center;
 }
 
-.info ul {
-    display: flex;
-    flex-direction: row;
-}
-
-.nav {
-    display: flex;
-}
 
 .logo {
-    display: flex;
-    padding-left: 0px;
-    padding-top: 24px;
-    padding-right: 76px;
-    padding-bottom: 24px;
+    margin-right: 76px;
 }
 
-.list {
+.menu {
     display: flex;
     gap: 40px;
-    padding-left: 0px;
-    padding-top: 24px;
-    padding-right: 332px;
-    padding-bottom: 24px;
+}
+
+.menu-item {
+    display: flex;
+}
+
+.menu-link {
+    padding: 24px 0;
 }
 
 /*Header-info*/
-.mailto {
+.header-info {
     display: flex;
-    padding: 24px 0px;
+    align-items: center;
 }
 
-.tel {
+.info-list {
     display: flex;
-    padding: 24px 0px 24px 40px;
+    gap: 40px;
 }
+
+
+
 
 /*-------Section-main-title------*/
 
@@ -120,25 +120,27 @@ section {
     justify-content: center;
     align-items: center;
     width: 1440px;
+    padding: 180px 0;
 
-
-
-    text-align: center;
-    box-sizing: border-box;
 }
 
-.service-button {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 48px;
-}
+.main-title {
+    max-width: 496px;
 
+}
 
 .order-service-button {
+    display: block;
+    min-width: 169px;
+    height: 56px;
+    border: none;
     border-radius: 4px;
     padding: 16px 32px;
-
+    margin-top: 48px;
+    margin-left: 164px;
+    margin-right: 163px;
+    background-color: #4d5ae5;
+    cursor: pointer;
 }
 
 /*------Section-service------*/
@@ -151,6 +153,8 @@ section {
 
 
 .services-item {
+    display: flex;
+    gap: 24px;
     flex: 1 1 calc(25% - 8px);
     box-sizing: border-box;
 }
@@ -161,7 +165,13 @@ section {
     justify-content: flex-start;
     flex-direction: column;
     gap: 8px;
+    width: calc((100% - 72px) / 4);
 }
+
+.section-service-title {
+    margin-bottom: 8px;
+}
+
 
 /*-----Section-person------*/
 
@@ -179,7 +189,7 @@ section {
 .title {
     font-size: 24px;
     text-align: center;
-    margin-bottom: 40px;
+    margin-bottom: 72px;
 
 }
 
@@ -187,12 +197,13 @@ section {
 .person {
     display: flex;
     flex-wrap: wrap;
-    gap: 32px;
+    gap: 24px;
     justify-content: center;
 
 }
 
 .name {
+    width: calc((100% - 72px) / 4);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -202,8 +213,23 @@ section {
     padding: 0px 0px 32px 0px;
     width: 264px;
     height: auto;
+}
+
+.name-person {
+    padding: 32px 0;
 
 }
+
+.section-title {
+    text-align: center;
+    margin-bottom: 8px;
+}
+
+.text {
+    text-align: center;
+}
+
+
 
 /*------Section-portfolio------*/
 .section-portfolio {
@@ -211,30 +237,43 @@ section {
     padding: 120px 0px;
 }
 
-
-
-
-
-
-
-
-
 .items {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     gap: 24px;
+    row-gap: 48px;
     justify-content: center;
     padding: 0;
     margin: 0;
 }
 
 .list-item {
-
+    width: calc((100% - 48px) / 3);
     flex: 1 1 calc(33.333% - 32px);
     max-width: 360px;
     box-sizing: border-box;
     text-align: center;
+}
+
+.name-item {
+    padding: 32px 16px;
+    border: 1px solid #e7e9fc;
+    border-top: none;
+}
+
+.section-title {
+    margin-bottom: 8px;
+}
+
+/*-----Footer-----*/
+.page-footer {
+    padding: 100px 0 100px;
+}
+
+.logo-footer {
+    display: inline-block;
+    margin-bottom: 16px;
 }
 
 /*Typograghy*/
@@ -302,6 +341,18 @@ section {
     text-transform: uppercase;
 }
 
+.logo-footer {
+    font-family: "Raleway", sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+    color: #4d5ae5;
+    text-transform: uppercase;
+}
+
+
+
 .studio-black {
     color: #2e2f42;
 }
@@ -329,7 +380,7 @@ ul li:first-child .custom-link:focus {
     color: #2e2f42;
 }
 
-.info {
+.header-info {
     font-style: normal;
 }
 
@@ -374,7 +425,7 @@ ul li:first-child .address-link:focus {
     letter-spacing: 0.02em;
 }
 
-.footer-section {
+.page-footer {
     background-color: #2e2f42;
 }
 
