@@ -13,10 +13,6 @@ ul {
     padding: 0;
 }
 
-section {
-    padding: 120 0;
-}
-
 img {
     display: block;
 }
@@ -53,10 +49,6 @@ ul {
     max-width: 1158px;
     margin: 0 auto;
     padding: 0 15px;
-}
-
-.p-s2 {
-    padding: 120px 156px;
 }
 
 /*-------Header-------*/
@@ -112,25 +104,6 @@ ul {
     color: #404bbf;
 }
 
-.menu-link-active {
-    padding: 24px 0;
-    display: block;
-    font-size: 16px;
-    font-weight: 500;
-    line-height: 1.5;
-    letter-spacing: 0.02em;
-    color: #2e2f42;
-}
-
-.menu-link-active:hover,
-.menu-link-active:focus {
-    color: #404BBF
-}
-
-.menu-link-active:active {
-    color: #404BBF;
-    text-decoration: underline;
-}
 
 /*Header-info*/
 .header-info {
@@ -207,6 +180,8 @@ ul {
 /*------Section-service------*/
 .section-service {
     box-sizing: border-box;
+    margin-top: 120px;
+    margin-bottom: 120px;
 }
 
 .services-item {
