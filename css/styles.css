@@ -180,8 +180,7 @@ ul {
 /*------Section-service------*/
 .section-service {
     box-sizing: border-box;
-    margin-top: 120px;
-    margin-bottom: 120px;
+    padding: 120px 0;
 }
 
 .services-item {
@@ -213,10 +212,13 @@ ul {
 }
 
 /*-----Section-person------*/
+.section-person {
+    padding: 120px 0;
+}
+
 .title {
     font-size: 24px;
     text-align: center;
-    padding-top: 104.43px;
     margin-bottom: 72px;
     font-size: 36px;
     font-weight: 700;
@@ -285,18 +287,6 @@ ul {
     border-top: none;
 }
 
-.title-portfolio {
-    font-size: 24px;
-    text-align: center;
-    margin-bottom: 72px;
-    font-size: 36px;
-    font-weight: 700;
-    line-height: 1.11;
-    letter-spacing: 0.02em;
-    text-align: center;
-    text-transform: capitalize;
-    color: #2e2f42;
-}
 
 /*-----Footer-----*/
 .page-footer {
