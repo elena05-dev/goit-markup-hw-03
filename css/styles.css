@@ -177,7 +177,7 @@ ul {
     background-color: #404bbf;
 }
 
-/*------Section-service------*/
+/*------Section2-service------*/
 .section-service {
     box-sizing: border-box;
     padding: 120px 0;
@@ -211,9 +211,10 @@ ul {
     color: #434455;
 }
 
-/*-----Section-person------*/
+/*-----Section3-person------*/
 .section-person {
     padding: 120px 0;
+    background-color: #f4f4fd;
 }
 
 .title {
@@ -234,7 +235,7 @@ ul {
     flex-wrap: wrap;
     gap: 24px;
     justify-content: center;
-    padding-bottom: 120px;
+
 }
 
 .name {
@@ -251,17 +252,26 @@ ul {
 
 .section-title {
     margin-bottom: 8px;
+    font-size: 20px;
+    font-weight: 500;
+    letter-spacing: 0.02em;
+    text-align: center;
+    color: #2e2f42;
 }
 
-.section-person {
-    background-color: #f4f4fd;
+.text {
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 0.02em;
+    text-align: center;
+    color: #434455;
 }
 
 .section-service {
     background-color: #ffffff;
 }
 
-/*------Section-portfolio------*/
+/*------Section4-portfolio------*/
 .section-portfolio {
     padding: 120px 0;
 }
@@ -287,6 +297,19 @@ ul {
     border-top: none;
 }
 
+.section-title-portfolio {
+    font-size: 20px;
+    font-weight: 500;
+    letter-spacing: 0.02em;
+    color: #2e2f42;
+}
+
+.section-portfolio {
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 0.02em;
+    color: #434455;
+}
 
 /*-----Footer-----*/
 .page-footer {
@@ -308,6 +331,8 @@ ul {
 
 .text-footer {
     max-width: 264px;
+    font-size: 16px;
+    font-weight: 400;
     color: #f4f4fd;
     line-height: 1.5;
     letter-spacing: 0.02em;
